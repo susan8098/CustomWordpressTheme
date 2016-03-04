@@ -1,3 +1,18 @@
 footer {
 	clear: both;
+	padding: 20px;
+
+	.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+
+.footerL {
+	width: 60%;
+}
+
+.footerR {
+	width: 40%;
 }

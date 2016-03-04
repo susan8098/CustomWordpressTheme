@@ -1,4 +1,24 @@
-.latestPost {
-	width: 80%;
+div.latestPost {
+	background-size: cover;
 	height: 500px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+
+
+}
+
+a.homeHero {
+	text-align: center;
+
+	h2 {
+		color: white;
+		text-transform: uppercase;
+		margin: 1rem;
+	}
+
+	p {
+		color: white;
+	}
+
 }

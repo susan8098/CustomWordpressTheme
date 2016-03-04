@@ -6,18 +6,28 @@
 
 get_header();  ?>
 
-<div class="main">
+<div class="homeMain">
   <div class="wrapper">
-  	<div class="latestPost" style="background-image: url(<?php echo hackeryou_get_thumbnail_url($post) ?>); height: 500px">
-  		
-  	</div>
 
   	<?php
-  		$args = array('numberposts' => '1');
-  	    $recent_posts = wp_get_recent_posts($args);
-  	    foreach( $recent_posts as $recent ) {
-  	    	echo '<li><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"].'</a> </li>';
-  	    }
+  		$args = array('posts_per_page' => '1');
+      $recent_posts = new WP_Query($args);
+      while($recent_posts->have_posts()) {
+        $recent_posts->the_post();
+        ?>
+  	     
+        <a href=" <?php the_permalink() ?> " class="homeHero">
+          <div class="latestPost" style="background-image: url('<?php echo hackeryou_get_thumbnail_url($post) ?>') ; background-size: cover;">
+
+            <h2> <?php the_title() ?></h2>
+
+            <p> <?php the_date(); ?> </p>
+
+          </div>
+        </a>
+
+        <?php
+      }
   	?>
 
   
@@ -27,6 +37,7 @@ get_header();  ?>
 
       <h2><?php the_title(); ?></h2>
       <?php the_content(); ?>
+
 
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->

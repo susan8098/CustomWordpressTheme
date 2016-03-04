@@ -1,6 +1,22 @@
 <footer>
-  <div class="container">
-    <p>&copy; Susan Lee <?php echo date('Y'); ?></p>
+  <div class="wrapper">
+
+  	<div class="footerL">
+
+		
+		<?php  dynamic_sidebar( 'footer-widget-area' ); ?>
+
+    	<p>&copy; Susan Lee <?php echo date('Y'); ?></p>
+
+  	</div>
+
+  	<div class="footerR">
+  		<h2>Voyage</h2>
+  		<p>483 Queen St W, <br>
+  		   Toronto, ON M1M 2A1</p>
+  		<p>info@voyage.com</p>
+  	</div>
+
   </div>
 </footer>
 
