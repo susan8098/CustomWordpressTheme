@@ -44,7 +44,7 @@ of writing our own link tags in the header. */
 
 function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
-
+	wp_enqueue_style('headerFont', 'https://fonts.googleapis.com/css?family=Playfair+Display:700,700italic');
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 }
 
@@ -275,4 +275,12 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+
+// Get Thumbnail / Featured Image
+function hackeryou_get_thumbnail_url($post) {
+	$imageID = get_post_thumbnail_id($post->ID);
+	$imageURL = wp_get_attachment_URL($imageID);
+	return $imageURL;
 }

@@ -1,0 +1,159 @@
+
+// Colors
+$v-red: #AA1F15;
+$black: #242424;
+$white: #FCFBF9;
+
+// Font Stack
+$header-font: 'Playfair Display', serif;
+@font-face {
+	font-family: futura;
+	src: url(../font/Futura.ttc);
+}
+
+/*
+====================================
+Global Classes / Wordpress Specific
+====================================
+*/
+
+.aligncenter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+img {
+	&.alignleft {
+		padding-right: 5px;
+	}
+	&.alignright {
+		padding-left: 5px;
+	}
+}
+
+.clear {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+
+/*
+====================================
+Default Styling
+====================================
+*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 15px;
+	font-size: 1.5em;
+	background: $white;
+	color: $black;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+
+// Header
+h1, h2, h3, h4 {
+	font-family: $header-font;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+// Paragraphs
+p {
+	font-family: futura;
+	line-height: 1.5;
+}
+
+// Links
+a {
+	color: $v-red;
+	text-decoration: none;
+	&:hover {
+		color: lighten($v-red, 10%);
+	}
+}
+
+
+// lists
+ul li, ol li {
+	padding: 3px;
+}
+
+
+/*blockquotes*/
+
+blockquote {
+	background: #F7F7F7;
+	margin: 0;
+	padding: 20px;
+	p {
+		margin-top: 0;
+	}
+}
+
+/*tables*/
+
+table {
+	td {
+		padding: 10px;
+	}
+	tr td:first {
+		padding-right: 0;
+	}
+}
+
+/*def lists*/
+
+dt {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+dd {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+/*PRE*/
+
+pre {
+	background: #F7F7F7;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+

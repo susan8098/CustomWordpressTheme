@@ -7,7 +7,7 @@
 get_header();  ?>
 
 <div class="main">
-  <div class="container">
+  <div class="wrapper">
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
