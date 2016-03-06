@@ -16,11 +16,17 @@
 <header>
   <div class="wrapper">
     <nav>
-      <h1>
-        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-          <?php bloginfo( 'name' ); ?>
+      <div class="iconContainer">
+        <a href=" <?php echo home_url( '/' ); ?> ">
+          <img src=" <?php site_icon_url(); ?> " alt="">
         </a>
-      </h1>
+      </div> <!-- .iconContainer -->
+
+      <!-- <h1>
+        <a href="<?php //echo home_url( '/' ); ?>" title="<?php // bloginfo( 'name', 'display' ); ?>" rel="home">
+          <?php //bloginfo( 'name' ); ?>
+        </a>
+      </h1> -->
 
       <?php wp_nav_menu( array(
         'container' => 'ul',

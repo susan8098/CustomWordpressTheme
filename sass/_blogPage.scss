@@ -1,0 +1,34 @@
+section.blog {
+	h2 {
+		text-align: center;
+		margin: 2rem 0;
+	}
+
+	h5 {
+		margin: 1rem 0;
+	}
+}
+
+.post {
+	padding: 4rem 0;
+	border-bottom: 1px solid #4A4A4A;
+	
+	.featuredPhoto {
+		width: 100%;
+		height: 550px;
+		margin: 4rem 0;
+	}
+
+	p {
+		text-align: justify;
+
+		&::first-letter {
+			font-size: 5rem;
+			color: $v-red;
+			font-family: $header-font;
+			margin-right: 2rem;
+		}
+	}
+
+}
+

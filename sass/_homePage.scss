@@ -1,0 +1,84 @@
+.homeMain {
+	text-align: center;
+}
+
+div.latestPost {
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+
+
+}
+
+a.homeHero {
+	text-align: center;
+
+	h1 {
+		color: white;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	p {
+		color: white;
+	}
+
+}
+
+.featuredContainer {
+	margin: 0 0 5rem 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+	.featuredContainer-post {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+		margin-bottom: 2rem;
+		width: 32%;
+		height: 25rem;
+		display: flex;
+		
+		.featuredContainer-post-text {
+			margin: auto;
+			
+			h2 {
+				margin: 0;
+			}
+
+			button {
+				padding: 1rem 2rem;
+				text-transform: uppercase;
+				font-family: futura;
+				letter-spacing: 1.2px;
+				background: none;
+				border: 2.5px solid white;
+				margin-top: 1rem;
+				transition: all .3s;
+
+				&:hover {
+					background: $v-red;
+					border: 2.5px solid $v-red;
+				}
+
+				a {
+					padding: 1rem 1rem;
+					color: white;
+				}
+			}
+
+		}
+
+
+		
+	}
+
+}
+
+
+
+.featuredContainer-post-text {
+	color: white;
+}

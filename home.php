@@ -1,4 +1,4 @@
-<?php //index.php is the last resort template, if no other templates match ?>
+
 <?php get_header(); ?>
 
 <section class="blog">
@@ -9,7 +9,7 @@
 	  	<?php // Start the loop ?>
 	 
   		<?php
-  			$args = array('posts_per_page' => '4');
+  		$args = array('posts_per_page' => '4');
   	    $recent_posts = new WP_Query($args);
   	    while($recent_posts->have_posts()) {
   	      $recent_posts->the_post();
@@ -28,10 +28,12 @@
 
 		  	</div>
 		 
-	       <?php
+	       	<?php
+
 	     }
 	 	?>
 
+		  	<?php echo do_shortcode('[ajax_load_more]');?>
 
 	    <?php //get_template_part( 'loop', 'index' );	?>
 	

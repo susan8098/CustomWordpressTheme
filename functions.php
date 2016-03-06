@@ -23,7 +23,7 @@ function theme_setup() {
   * adding additional menus to the array. */
 	register_nav_menus( array(
 		'primary' => 'Primary Navigation',
-		'footer' => 'Footer Navigation'
+		'footer' => 'Footer Navigation',
 	) );
 
 	/*
@@ -127,7 +127,7 @@ add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
  * Sets the post excerpt length to 40 characters.
  */
 function hackeryou_excerpt_length( $length ) {
-	return 40;
+	return 80;
 }
 add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
 
@@ -175,10 +175,20 @@ function hackeryou_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-	// Area 2, footer
+	// Area 2, footer Left
 	register_sidebar( array(
-		'name' => 'Footer Widget Area',
-		'id' => 'footer-widget-area',
+		'name' => 'Footer Widget Left',
+		'id' => 'footer-widget-l',
+		'description' => 'Footer widget area',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	// Area 3, footer Right
+	register_sidebar( array(
+		'name' => 'Footer Widget Right',
+		'id' => 'footer-widget-r',
 		'description' => 'Footer widget area',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
@@ -237,8 +247,8 @@ function hackeryou_posted_in() {
 	}
 	// Prints the string, replacing the placeholders.
 	printf(
-		$posted_in,
-		get_the_category_list( ', ' ),
+		// $posted_in,
+		// get_the_category_list( ', ' ),
 		$tag_list,
 		get_permalink(),
 		the_title_attribute( 'echo=0' )

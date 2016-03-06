@@ -1,7 +1,7 @@
 
 // Colors
 $v-red: #AA1F15;
-$black: #242424;
+$black: #060606;
 $white: #FCFBF9;
 
 // Font Stack
@@ -67,15 +67,25 @@ img {
 	max-width: 100%;
 }
 
+section {
+	padding-bottom: 2rem;
+}
+
 .wrapper {
 	max-width: 1200px;
+	width: 80%;
 	margin: 0 auto;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+// .content {
+// 	float: left;
+// 	width: 60%;
+// 	margin-right: 5%;
+// }
+
+.innerWrapper {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .full {
@@ -92,13 +102,37 @@ h1 {
 }
 
 h2 {
-	font-size: 4rem;
+	font-size: 4.5rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 3rem;
+	margin: .5rem 0 1rem 0;
+}
+
+h5 {
+	font-size: 1.5rem;
+	font-family: futura;
+	color: grey;
+	text-align: center;
+
+}
+
+.subHeader {
+	margin: 10rem 0 5rem 0;
+	text-align: center;
+}
+
+.divider {
+	margin: 1rem 0 2rem 0;
 }
 
 // Paragraphs
 p {
 	font-family: futura;
 	line-height: 1.5;
+
 }
 
 // Links

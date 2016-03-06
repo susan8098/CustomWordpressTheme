@@ -1,16 +1,23 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
-    <div class="content">
+<div class="singlePage">
+  
+  <!-- Featured Image -->
+  <div class="featured-image-container" style="background-image: url('<?php echo hackeryou_get_thumbnail_url($post) ?>') ; background-size: cover;">
+  </div> <!-- featured image -->
+
+  <div class="wrapper">
+    <div class="innerWrapper">
+
+      <!-- Loop -->
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
+        
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
-
-          <div class="entry-meta">
-            <?php hackeryou_posted_on(); ?>
-          </div><!-- .entry-meta -->
+          
+          <div class="subHeader">
+            <h1 class="entry-title"><a href=" <?php the_permalink() ?> "> <?php the_title(); ?> </a></h1>
+            <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+          </div>
 
           <div class="entry-content">
             <?php the_content(); ?>
@@ -20,10 +27,15 @@
             )); ?>
           </div><!-- .entry-content -->
 
+          <div class="entry-meta">
+            <?php hackeryou_posted_on(); ?>
+          </div><!-- .entry-meta -->
+
           <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
+            / <?php hackeryou_posted_in(); ?> /
+            <?php edit_post_link( 'Edit this post', '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-utility -->
+
         </div><!-- #post-## -->
 
         <div id="nav-below" class="navigation">
@@ -39,7 +51,7 @@
 
     <?php get_sidebar(); ?>
 
-  </div> <!-- /.container -->
+  </div> <!-- /.wrapper -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

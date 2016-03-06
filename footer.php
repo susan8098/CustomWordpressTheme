@@ -4,9 +4,9 @@
   	<div class="footerL">
 
 		
-		<?php  dynamic_sidebar( 'footer-widget-area' ); ?>
+		<?php  dynamic_sidebar( 'footer-widget-l' ); ?>
 
-    	<p>&copy; Susan Lee <?php echo date('Y'); ?></p>
+    	<p class="copyright">Copyright &copy; 2016 Voyage <?php echo date('Y'); ?></p>
 
   	</div>
 
@@ -15,6 +15,7 @@
   		<p>483 Queen St W, <br>
   		   Toronto, ON M1M 2A1</p>
   		<p>info@voyage.com</p>
+      <?php  dynamic_sidebar( 'footer-widget-R' ); ?>
   	</div>
 
   </div>

@@ -1,6 +1,9 @@
 footer {
 	clear: both;
-	padding: 20px;
+	padding: 4rem;
+	list-style: none;
+	color: $white;
+	background-color: $black;
 
 	.wrapper {
 		display: flex;
@@ -9,10 +12,90 @@ footer {
 	}
 }
 
+// Footer Left Column
 .footerL {
 	width: 60%;
+	position: relative;
+
+	// Footer Search Bar
+	li#search-3 {
+		form#searchform {
+			width: 100%;
+
+			input[type=search] {
+				width: 80%;
+				background-color: $black;
+				border-bottom: 2px solid $white;
+				margin-bottom: 3rem;
+			}
+
+			input[type=submit] {
+				background-color: $black;
+				background-image: url(../voyage/images/search-white.png);
+			}
+		}
+	}
+	
+	// Footer Email Sub bar
+	li#email-subscribers-3 {
+
+		div.es_caption {
+			font-family: futura;
+			letter-spacing: 1.1px;
+		}
+
+		div.es_lablebox {
+			display: none;
+		}
+
+		div.es_textbox {
+			display: inline;
+			width: 80%;
+
+			input {
+				padding: 1rem;
+				background-color: $black;
+				border: 2px solid $white;
+				width: 67%;
+			}
+		}
+
+		div.es_button {
+			display: inline;
+			width: 20%;
+
+			input {
+				padding: 1rem;
+				border: 2px solid $white;
+				background-color: $white;
+
+			}
+		}
+	}
 }
 
+
+// Footer Right Column 
 .footerR {
 	width: 40%;
+	text-align: center;
+	
+	h2 {
+		margin: 0 0 3rem 0;
+	}
+}
+
+ul#menu-footer-social {
+	li {
+		a {
+			color: $white;
+			
+		}
+	}
+}
+
+p.copyright {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
 }
