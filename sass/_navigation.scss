@@ -52,16 +52,21 @@ ul.menu {
 }
 
 form#searchform {
-	display: inline;
+	display: inline-block;
+	width: 25%;
 
 	input[type=search] {
+		display: inline-block;
+		width : 70%;
 		background-color: $white;
 		padding: 1rem;
 		border: none;
 		border-bottom: 2px solid $black;
+
 	}
 
 	input[type=submit] {
+		display: inline-block;
 		border: none;
 		background-color: $white;
 		background-image: url(../voyage/images/search.png);

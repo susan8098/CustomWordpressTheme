@@ -66,6 +66,9 @@ h3 {
 .comment-meta {
 	font-size: 12px;
 	margin: 0 0 5px;
+	background-color: $white;
+	padding: 2rem 0;
+
 	a {
 		&:link, &:visited {
 			color: #888888;
@@ -77,6 +80,8 @@ h3 {
 .reply {
 	font-size: 12px;
 	padding: 0 0 24px;
+	border-bottom: 2px solid $v-red;
+
 	a {
 		color: #888888;
 	}
@@ -224,4 +229,9 @@ p.form-allowed-tags, .nocomments {
 
 #respond p, #comments-list ul #respond {
 	margin: 0;
+}
+
+.comment-list {
+	list-style: none;
+	padding: 0;
 }

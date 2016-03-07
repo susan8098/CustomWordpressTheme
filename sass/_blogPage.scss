@@ -22,13 +22,14 @@ section.blog {
 	p {
 		text-align: justify;
 
-		&::first-letter {
-			font-size: 5rem;
-			color: $v-red;
-			font-family: $header-font;
-			margin-right: 2rem;
-		}
 	}
 
+}
+
+section.blog .post p::first-letter {
+	font-size: 5rem;
+	color: $v-red;
+	font-family: $header-font;
+	margin-right: 2rem;
 }
 

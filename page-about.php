@@ -18,8 +18,11 @@ get_header();  ?>
           
           <div class="bio">
             
-            <h2><?php the_title(); ?></h2>
-            <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+            <div class="subHeader">
+              <h2><?php the_title(); ?></h2>
+              <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>  
+            </div>
+            
             <?php the_content(); ?>
             
           </div> <!-- .bio -->

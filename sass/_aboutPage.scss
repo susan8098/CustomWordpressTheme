@@ -1,12 +1,17 @@
 .bio {
 	float: left;
 	width: 42%;
-	margin: 5% 5% 5% 10%;
+	margin: 0 5% 5% 5%;
+
+	h2 {
+		margin: 0;
+	}
 
 }
 
 .profilePic-Container {
 	float: right;
 	width: 42%;
-	margin-top: 5%;
+	margin: 5% 5% 5% 0;
+
 }

@@ -1,0 +1,170 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.innerWrapper {
+		width: 100%;
+	}
+}
+ 
+@media (max-width: 840px) {
+	.wrapper {
+		width: 95%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	form#searchform {
+		display: block;
+		width: 100%;
+		text-align: right;
+		padding-right: 2rem;
+
+		input[type=search] {
+			width: 50%;
+		}
+	}
+
+	.bio, .profilePic-Container {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding: 5%;
+	}
+
+}
+
+@media (max-width: 650px) {
+	.wrapper {
+		width: 100%;
+	}
+
+	.innerWrapper {
+		padding: 0 2rem;
+	}
+
+	.featuredContainer .featuredContainer-post {
+		width: 33.33%;
+		margin: 0;
+	}
+
+	footer {
+		padding: 5rem 0;
+
+		.footerL {
+			width: 50%;
+
+			p.copyright {
+				position: relative;
+				margin-bottom: 5rem;
+			}
+
+			// Footer Search Form
+			li#search-3 {
+				form#searchform {
+					width: 100%;
+					text-align: left;
+
+					input[type=search] {
+						width: 70%;
+					}
+
+				}
+			}
+			
+			// Footer Email Subscription Form
+			li#email-subscribers-3 {
+				
+				// Input Text Box
+				div.es_textbox {
+					display: block;
+					width: 100%;
+					padding-bottom: 0;
+
+					input {
+						padding: 1rem;
+						background-color: $black;
+						border: 2px solid $white;
+						width: 100%;
+					}
+				}
+				
+				// Submit Button
+				div.es_button {
+					display: block;
+					width: 100%;
+
+					input {
+						width: 100%;
+
+					}
+				}
+
+			}
+		}
+	}
+
+	.menu-footer-social-container a i{
+		font-size: 3rem;
+	}
+	
+}
+ 
+@media (max-width: 560px) {
+	.homeMain .featuredContainer-post {
+		width: 50%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 490px) {
+	.featured .featuredContainer-post {
+		width: 100%;
+	}
+
+	.iconContainer {
+		width: 9rem;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+	}
+
+	footer {
+		padding: 5rem 2rem;
+
+		.footerL, .footerR {
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.footerL li#search-3 form#searchform {
+			text-align: center;
+		}
+	}
+
+	.post .featuredPhoto {
+		height: 400px;
+	}
+
+}
+
+@media (max-width: 400px) {
+	.iconContainer {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.homeMain .featuredContainer-post {
+		width: 100%;
+	}
+
+	form#searchform {
+		text-align: center;
+	}
+
+}

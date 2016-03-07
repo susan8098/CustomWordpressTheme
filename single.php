@@ -49,7 +49,6 @@
 
     </div> <!-- /.content -->
 
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.wrapper -->
 </div> <!-- /.main -->

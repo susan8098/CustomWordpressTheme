@@ -5,11 +5,30 @@
 		margin: 5rem 0 0 0;
 	}
 
-
-
 	.divider {
 		text-align: center;
 
+	}
+
+	input.submit {
+		background-color: $v-red;
+		padding: 1rem 2.5rem;
+		border: none;
+		color: white;
+	}
+
+	textarea#comment {
+		margin: 2rem 0;
+	}
+	
+	div#nav-below {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	p.nav-previous, p.nav-next {
+		display: inline-block;
+		font-size: 2rem;
 	}
 }
 

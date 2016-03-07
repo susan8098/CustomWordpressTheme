@@ -7,19 +7,19 @@
 get_header();  ?>
 
 <section class="homeMain">
-  <div class="wrapper">
 
-  	<?php
-  		$args = array('posts_per_page' => '1');
+    <?php
+      $args = array('posts_per_page' => '1');
       $recent_posts = new WP_Query($args);
 
       while($recent_posts->have_posts()) {
         $recent_posts->the_post();
         ?>
-  	     
+         
         <a href=" <?php the_permalink() ?> " class="homeHero">
           <div class="latestPost" style="background: url('<?php echo hackeryou_get_thumbnail_url($post) ?>') ; background-size: cover; background-position: center;">
 
+  
             <h1> <?php the_title() ?></h1>
 
             <p> <?php the_date(); ?> </p>
@@ -29,12 +29,13 @@ get_header();  ?>
 
         <?php
       }
-  	?> <!-- End of displaying the latest hero post -->
+    ?> <!-- End of displaying the latest hero post -->
 
     
 
     <!-- Featured Travel Guides (using Guide Category) -->
     
+  <div class="wrapper">
     <div class="subHeader">
       <h3>Featured Adventure</h3>
       <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
