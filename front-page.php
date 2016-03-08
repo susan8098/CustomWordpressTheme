@@ -38,7 +38,7 @@ get_header();  ?>
   <div class="wrapper">
     <div class="subHeader">
       <h3>Featured Adventure</h3>
-      <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+      <div class="divider"><img src="//localhost:8888/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
     </div>
 
     <div class="featuredContainer">
@@ -69,7 +69,7 @@ get_header();  ?>
       
       <div class="subHeader">
         <h3>@voyagetravel on instagram</h3>
-        <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+        <div class="divider"><img src="//localhost:8888/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
       </div>
 
         <?php echo do_shortcode('[instagram-feed]') ?>

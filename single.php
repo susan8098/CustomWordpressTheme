@@ -16,7 +16,7 @@
           
           <div class="subHeader">
             <h1 class="entry-title"><a href=" <?php the_permalink() ?> "> <?php the_title(); ?> </a></h1>
-            <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+            <div class="divider"><img src="//localhost:8888/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
           </div>
 
           <div class="entry-content">

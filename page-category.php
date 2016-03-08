@@ -14,7 +14,7 @@ get_header();  ?>
       <!-- Europe -->
       <div class="subHeader">
         <h3>Europe</h3>
-        <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+        <div class="divider"><img src="//localhost:8888/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
       </div>
       
       <div class="featuredContainer">
@@ -41,7 +41,7 @@ get_header();  ?>
       <!-- Europe -->
       <div class="subHeader">
         <h3>South America</h3>
-        <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+        <div class="divider"><img src="//localhost:8888/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
       </div>
       
       <div class="featuredContainer">
@@ -68,7 +68,7 @@ get_header();  ?>
       <!-- Asia -->
       <div class="subHeader">
         <h3>Asia</h3>
-        <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+        <div class="divider"><img src="//localhost:8888/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
       </div>
       
       <div class="featuredContainer">
@@ -95,7 +95,7 @@ get_header();  ?>
       <!-- North America -->
       <div class="subHeader">
         <h3>North America</h3>
-        <div class="divider"><img src="//localhost:3000/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
+        <div class="divider"><img src="//localhost:8888/week7_Project/wp-content/themes/voyage/images/divider.png" alt=""></div>
       </div>
       
       <div class="featuredContainer">
